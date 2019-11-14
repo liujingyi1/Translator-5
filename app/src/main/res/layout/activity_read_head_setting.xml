@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv91"
+        android:textSize="25sp"
+        android:textColor="@color/menu"
+        android:layout_alignParentEnd="true"/>
+    <TextView
+        android:id="@+id/lay_tv"
+        android:layout_below="@id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv92"
+        android:textSize="30sp"
+        android:textColor="@color/text_view"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_below="@id/lay_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv92"
+        android:textSize="30sp"
+        android:textColor="@color/text_view" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_below="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="6"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:background="@null"/>
+    <LinearLayout
+        android:id="@+id/bt_view"
+        android:layout_below="@+id/editText"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <Button
+            android:id="@+id/reset_bt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/reset"/>
+        <Button
+            android:id="@+id/confirm_bt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/confirm"/>
+    </LinearLayout>
+</RelativeLayout>

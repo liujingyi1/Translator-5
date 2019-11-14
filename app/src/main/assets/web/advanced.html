@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<!-- Bootstrap -->
+<!--<link href="css/bootstrap-magic.css" rel="stylesheet">-->
+<!--<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">-->
+
+<!--&lt;!&ndash; jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) &ndash;&gt;-->
+<!--<script src="jquery/jquery.min.js"></script>-->
+<!--&lt;!&ndash; 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 &ndash;&gt;-->
+<!--<script src="bootstrap/js/bootstrap.min.js"></script>-->
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">
+                高级应用设置
+            </h3>
+        </div>
+        <div class="panel-body">
+            <form class="form-horizontal" role="form">
+                <div class="form-group">
+                    <label for="input_AD" class="col-sm-2 control-label">在线广告: </label>
+                    <div class="col-sm-10">
+                        <div id="AD" class="checkbox">
+                            <input id="input_AD" style="margin-left:10px;" type="checkbox" />
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="input_ad_link" class="col-sm-2 control-label">链接:</label>
+                    <div class="col-sm-4">
+                        <input type="email" class="form-control" id="input_ad_link" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="input_time" class="col-sm-2 control-label">时间(分钟):</label>
+                    <div class="col-sm-10">
+                        <div class="dropdown" id="input_time">
+                            <button id="btn_time" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                10
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="btn_time">
+                                <li><a href="#">10</a></li>
+                                <li><a href="#">15</a></li>
+                                <li><a href="#">20</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <br>
+
+                <div class="form-group">
+                    <label for="input_call" class="col-sm-2 control-label">快捷呼叫: </label>
+                    <div class="col-sm-10">
+                        <div id="call" class="checkbox">
+                            <input id="input_call" style="margin-left:10px;" type="checkbox" />
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="input_call_link" class="col-sm-2 control-label">链接:</label>
+                    <div class="col-sm-4">
+                        <input type="email" class="form-control" id="input_call_link" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="input_audio" class="col-sm-2 control-label">语音网关: </label>
+                    <div class="col-sm-10">
+                        <div id="audio" class="checkbox">
+                            <input id="input_audio" style="margin-left:10px;" type="checkbox" />
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="input_audio_link" class="col-sm-2 control-label">链接:</label>
+                    <div class="col-sm-4">
+                        <input type="email" class="form-control" id="input_audio_link" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="input_direct_call" class="col-sm-2 control-label">一键直呼:</label>
+                    <div class="col-sm-4">
+                        <input type="email" class="form-control" id="input_direct_call" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="input_ONU" class="col-sm-2 control-label">ONU穿透:</label>
+                    <div class="col-sm-4">
+                        <input type="email" class="form-control" id="input_ONU" />
+                    </div>
+                </div>
+                <br>
+
+                <div class="form-group">
+                    <label for="input_face" class="col-sm-2 control-label">人脸识别:</label>
+                    <div class="col-sm-4">
+                        <input type="email" class="form-control" id="input_face" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="input_similar" class="col-sm-2 control-label">相似度:</label>
+                    <div class="col-sm-10">
+                        <div class="dropdown" id="input_similar">
+                            <button id="btn_similar" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                中
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="btn_similar">
+                                <li><a href="#">高</a></li>
+                                <li><a href="#">中</a></li>
+                                <li><a href="#">低</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <br>
+
+                <div class="form-group">
+                    <label for="input_RTSP" class="col-sm-2 control-label">RESP视频输入:</label>
+                    <div class="col-sm-10">
+                        <div class="dropdown" id="input_RTSP">
+                            <button id="btn_RTSP" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                1
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="btn_RTSP">
+                                <li><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="input_RTSP_link" class="col-sm-2 control-label">链接:</label>
+                    <div class="col-sm-4">
+                        <input type="email" class="form-control" id="input_RTSP_link" />
+                    </div>
+                </div>
+
+                <hr>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button id="advanceApply" type="button" class="btn btn-primary">应用</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</html>

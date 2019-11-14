@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<!-- Bootstrap -->
+<!--<link href="css/bootstrap-magic.css" rel="stylesheet">-->
+<!--<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">-->
+
+<!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+<!--<script src="jquery/jquery.min.js"></script>-->
+<!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+<!--<script src="bootstrap/js/bootstrap.min.js"></script>-->
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">
+                特斯联门禁
+            </h3>
+        </div>
+        <div class="panel-body">
+            <form class="form-horizontal" role="form">
+                <div class="form-group">
+                    <label for="http_ip" class="col-sm-2 control-label">HTTP服务器:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="http_ip" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="mqtt_ip" class="col-sm-2 control-label">MQTT服务器:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="mqtt_ip" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="device_id" class="col-sm-2 control-label">设备ID:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="device_id" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="control_center" class="col-sm-2 control-label">管理中心:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="control_center" />
+                    </div>
+                </div>
+                <br>
+
+                <div class="form-group">
+                    <label for="sip_ip" class="col-sm-2 control-label">SIP服务器:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="sip_ip" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="sip_account" class="col-sm-2 control-label">用户名:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="sip_account" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="sip_password" class="col-sm-2 control-label">密码:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="sip_password" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="stun_address" class="col-sm-2 control-label">STUN地址:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="stun_address" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="stun_port" class="col-sm-2 control-label">STUN端口:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="stun_port" />
+                    </div>
+                </div>
+                <br>
+
+                <hr>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button id="tslAccessApply" type="button" class="btn btn-primary">应用</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+<!--<div class="jumbotron text-center" style="margin-bottom:0">-->
+    <!--<p>底部内容</p>-->
+<!--</div>-->
+<script src="js/tslAccess.js"></script>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<!-- Bootstrap -->
+<!--<link href="css/bootstrap-magic.css" rel="stylesheet">-->
+<!--<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">-->
+
+<!--&lt;!&ndash; jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) &ndash;&gt;-->
+<!--<script src="jquery/jquery.min.js"></script>-->
+<!--&lt;!&ndash; 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 &ndash;&gt;-->
+<!--<script src="bootstrap/js/bootstrap.min.js"></script>-->
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">
+                SIP电话设置
+            </h3>
+        </div>
+        <div class="panel-body">
+            <form class="form-horizontal" role="form">
+                <div class="form-group">
+                    <label for="enable_sip" class="col-sm-2 control-label">SIP启用: </label>
+                    <div class="col-sm-10">
+                        <div id="dynamicIP" class="checkbox">
+                            <input id="enable_sip" style="margin-left:10px;" type="checkbox" />
+                        </div>
+                    </div>
+                </div>
+                <br>
+
+                <div class="form-group">
+                    <label for="sip_server" class="col-sm-2 control-label">SIP服务器:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="sip_server" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="device_domain" class="col-sm-2 control-label">设备域:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="device_domain" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="outbound" class="col-sm-2 control-label">Outbound:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="outbound" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="sip_stun_address" class="col-sm-2 control-label">STUN地址:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="sip_stun_address" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="sip_stun_port" class="col-sm-2 control-label">STUN端口:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="sip_stun_port" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="h264" class="col-sm-2 control-label">H.264:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="h264" />
+                    </div>
+                </div>
+                <br>
+
+                <div class="form-group">
+                    <label for="setting_sip_account" class="col-sm-2 control-label">用户名:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="setting_sip_account" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="setting_sip_password" class="col-sm-2 control-label">密码:</label>
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control" id="setting_sip_password" />
+                    </div>
+                </div>
+                <br>
+
+                <div class="form-group">
+                    <label for="sip_call_time" class="col-sm-2 control-label">通话时间:</label>
+                    <div class="col-sm-10">
+                        <div class="dropdown" id="sip_call_time">
+                            <button id="btn_sip_call_time" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                3s
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="btn_sip_call_time">
+                                <li><a href="#">60s</a></li>
+                                <li><a href="#">90s</a></li>
+                                <li><a href="#">120s</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="sip_ring_time" class="col-sm-2 control-label">振铃时间:</label>
+                    <div class="col-sm-10">
+                        <div class="dropdown" id="sip_ring_time">
+                            <button id="btn_sip_ring_time" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                3s
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="btn_sip_ring_time">
+                                <li><a href="#">15s</a></li>
+                                <li><a href="#">25s</a></li>
+                                <li><a href="#">35s</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button id="sipApply" type="button" class="btn btn-primary">应用</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+<!--<div class="jumbotron text-center" style="margin-bottom:0">-->
+    <!--<p>底部内容</p>-->
+<!--</div>-->
+
+</html>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv81"
+        android:textSize="25sp"
+        android:textColor="@color/menu"
+        android:layout_alignParentEnd="true"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv82"
+        android:textSize="30sp"
+        android:textColor="@color/text_view"
+        android:layout_centerInParent="true"/>
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_below="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:ems="8"
+        android:hint="@string/factory"
+        android:textSize="40sp"
+        android:inputType="textPassword"
+        android:gravity="center"
+        android:background="@null"/>
+</RelativeLayout>

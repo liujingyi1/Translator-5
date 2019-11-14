@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:text="@string/tv51"
+        android:textColor="@color/menu"
+        android:textSize="25sp" />
+    <!--<TextView-->
+    <!--android:id="@+id/textView2"-->
+    <!--android:layout_below="@+id/textView"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="@string/tv52"-->
+    <!--android:textSize="30sp"-->
+    <!--android:textColor="@color/text_view"-->
+    <!--android:visibility="gone"/>-->
+    <!--<TextView-->
+    <!--android:id="@+id/textView3"-->
+    <!--android:layout_below="@+id/textView2"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="@string/tv53"-->
+    <!--android:textSize="30sp"-->
+    <!--android:textColor="@color/text_view"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:visibility="gone"/>-->
+
+    <!--<EditText-->
+    <!--android:id="@+id/editText"-->
+    <!--android:layout_below="@+id/textView3"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:ems="8"-->
+    <!--android:hint="@string/ff"-->
+    <!--android:textSize="40sp"-->
+    <!--android:inputType="textPassword"-->
+    <!--android:gravity="center"-->
+    <!--android:background="@null"-->
+    <!--android:visibility="gone"/>-->
+
+    <LinearLayout
+        android:id="@+id/ip_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/ip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ip"
+            android:textColor="@color/text_view"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/ip_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:textSize="30sp"
+            android:ems="15"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mask_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ip_address"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/mask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mask"
+            android:textColor="@color/text_view"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/mask_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:textSize="30sp"
+            android:ems="15"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/gateway_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mask_address"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/gateway"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gateway"
+            android:textColor="@color/text_view"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/gateway_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:textSize="30sp"
+            android:ems="15"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dns_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gateway_address"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/dns"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dns"
+            android:textColor="@color/text_view"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/dns_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:textSize="25sp"
+            android:ems="15"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/submit"
+        android:layout_below="@+id/dns_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/dhcp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dynamic_model"
+            android:textColor="@color/text_view"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/submit_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/submit"
+            android:textSize="30sp" />
+    </LinearLayout>
+</RelativeLayout>

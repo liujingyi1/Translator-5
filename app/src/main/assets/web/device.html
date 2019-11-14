@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<!-- Bootstrap -->
+<!--<link href="css/bootstrap-magic.css" rel="stylesheet">-->
+<!--<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">-->
+
+<!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+<!--<script src="jquery/jquery.min.js"></script>-->
+<!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+<!--<script src="bootstrap/js/bootstrap.min.js"></script>-->
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">
+                设备相关设置
+            </h3>
+        </div>
+        <div class="panel-body">
+            <form class="form-horizontal" role="form">
+                <div class="form-group">
+                    <label for="input_building" class="col-sm-2 control-label">栋号:</label>
+                    <div class="col-sm-2">
+                        <input type="text" class="form-control" id="input_building" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="input_unit" class="col-sm-2 control-label">单元:</label>
+                    <div class="col-sm-2">
+                        <input type="text" class="form-control" id="input_unit" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="input_number" class="col-sm-2 control-label">编号:</label>
+                    <div class="col-sm-2">
+                        <input type="text" class="form-control" id="input_number" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="input_device_password" class="col-sm-2 control-label">设备密码:</label>
+                    <div class="col-sm-3">
+                        <input type="text" class="form-control" id="input_device_password" />
+                    </div>
+                </div>
+                <br>
+
+                <div class="form-group">
+                    <label for="input_device_model" class="col-sm-2 control-label">设备模式:</label>
+                    <div class="col-sm-10">
+                        <div class="dropdown" id="input_device_model">
+                            <button id="btn_model" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Dropdown trigger
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="btn_model">
+                                <li><a href="#">单元门口机</a></li>
+                                <li><a href="#">围墙机</a></li>
+                                <li><a href="#">小门口机</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <br>
+
+                <div class="form-group">
+                    <label for="input_language" class="col-sm-2 control-label">语言选择:</label>
+                    <div class="col-sm-10">
+                        <div class="dropdown" id="input_language">
+                            <button id="btn_language" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Dropdown trigger
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="btn_language">
+                                <li><a href="#">简体中文</a></li>
+                                <li><a href="#">英文</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="input_volume" class="col-sm-2 control-label">系统音量:</label>
+                    <div class="col-sm-10">
+                        <div class="dropdown" id="input_volume">
+                            <button id="btn_volume" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Dropdown trigger
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="btn_volume">
+                                <li><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                                <li><a href="#">6</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="input_video_size" class="col-sm-2 control-label">视频大小:</label>
+                    <div class="col-sm-10">
+                        <div class="dropdown" id="input_video_size">
+                            <button id="btn_video_size" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Dropdown trigger
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="btn_video_size">
+                                <li><a href="#">640*480</a></li>
+                                <li><a href="#">320*240</a></li>
+                                <li><a href="#">1280*720</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="input_turn" class="col-sm-2 control-label">转呼方式:</label>
+                    <div class="col-sm-10">
+                        <div class="dropdown" id="input_turn">
+                            <button id="btn_turn" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Dropdown trigger
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="input_turn">
+                                <li><a href="#">同时呼叫</a></li>
+                                <li><a href="#">顺序呼叫</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="input_call_type" class="col-sm-2 control-label">呼叫方式:</label>
+                    <div class="col-sm-10">
+                        <div class="dropdown" id="input_call_type">
+                            <button id="btn_call_type" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Dropdown trigger
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="btn_call_type">
+                                <li><a href="#">正常模式</a></li>
+                                <li><a href="#">不正常模式</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <br>
+
+                <div class="form-group">
+                    <label for="input_lcd_direction" class="col-sm-2 control-label">LCD方向:</label>
+                    <div class="col-sm-10">
+                        <div class="dropdown" id="input_lcd_direction">
+                            <button id="btn_lcd_direction" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Dropdown trigger
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="btn_lcd_direction">
+                                <li><a href="#">横屏</a></li>
+                                <li><a href="#">竖屏</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button id="deviceApply" type="button" class="btn btn-primary">应用</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+<!--<div class="jumbotron text-center" style="margin-bottom:0">-->
+    <!--<p>底部内容</p>-->
+<!--</div>-->
+<script src="js/device.js"></script>
+</html>

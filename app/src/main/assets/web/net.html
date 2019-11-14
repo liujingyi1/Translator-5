@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<!-- Bootstrap -->
+<!--<link href="css/bootstrap-magic.css" rel="stylesheet">-->
+<!--<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">-->
+
+<!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+<!--<script src="jquery/jquery.min.js"></script>-->
+<!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+<!--<script src="bootstrap/js/bootstrap.min.js"></script>-->
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">
+                网络设置
+            </h3>
+        </div>
+        <div class="panel-body">
+            <form class="form-horizontal" role="form">
+                <div class="form-group">
+                    <label for="dynamicIP" class="col-sm-2 control-label">动态IP: </label>
+                    <div class="col-sm-10">
+                        <div id="dynamicIP" class="checkbox">
+                            <input id="input_dynamicIP" style="margin-left:10px;" type="checkbox" />
+                        </div>
+                    </div>
+                </div>
+                <br>
+
+                <div class="form-group">
+                    <label for="IPAddress" class="col-sm-2 control-label">IP地址:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="IPAddress" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="mask" class="col-sm-2 control-label">子网掩码:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="mask" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="gateway" class="col-sm-2 control-label">默认网关:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="gateway" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="dns" class="col-sm-2 control-label">DNS:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="dns" />
+                    </div>
+                </div>
+                <br>
+
+                <div class="form-group">
+                    <label for="managerIP" class="col-sm-2 control-label">管理软件IP:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="managerIP" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="password" class="col-sm-2 control-label">接入密码:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="password" />
+                    </div>
+                </div>
+
+                <hr>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button id="netApply" type="button" class="btn btn-primary">应用</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+<!--<div class="jumbotron text-center" style="margin-bottom:0">-->
+    <!--<p>底部内容</p>-->
+<!--</div>-->
+<script src="js/net.js"></script>
+</html>

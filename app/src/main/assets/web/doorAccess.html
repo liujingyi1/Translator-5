@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<!-- Bootstrap -->
+<!--<link href="css/bootstrap-magic.css" rel="stylesheet">-->
+<!--<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">-->
+
+<!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+<!--<script src="jquery/jquery.min.js"></script>-->
+<!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+<!--<script src="bootstrap/js/bootstrap.min.js"></script>-->
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">
+                门禁相关设置
+            </h3>
+        </div>
+        <div class="panel-body">
+            <form class="form-horizontal" role="form">
+
+                <div class="form-group">
+                    <label for="input_open_time" class="col-sm-2 control-label">开锁时间:</label>
+                    <div class="col-sm-10">
+                        <div class="dropdown" id="input_open_time">
+                            <button id="btn_open_time" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                3s
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="btn_open_time">
+                                <li><a href="#">1s</a></li>
+                                <li><a href="#">2s</a></li>
+                                <li><a href="#">3s</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="input_delay" class="col-sm-2 control-label">开门延时:</label>
+                    <div class="col-sm-10">
+                        <div class="dropdown" id="input_delay">
+                            <button id="btn_delay" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                3s
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="btn_delay">
+                                <li><a href="#">1s</a></li>
+                                <li><a href="#">2s</a></li>
+                                <li><a href="#">3s</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="input_elevator_floor" class="col-sm-2 control-label">电梯参考楼层:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="input_elevator_floor" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="input_card" class="col-sm-2 control-label">管理卡:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="input_card" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="input_safe_with_card" class="col-sm-2 control-label">刷卡布/撤防: </label>
+                    <div class="col-sm-10">
+                        <div id="dynamicIP" class="checkbox">
+                            <input id="input_safe_with_card" style="margin-left:10px;" type="checkbox" />
+                        </div>
+                    </div>
+                </div>
+                <br>
+
+
+                <div class="form-group">
+                    <label for="input_lock_password_group" class="col-sm-2 control-label">开锁密码:</label>
+                    <div class="col-sm-10" id="input_lock_password_group">
+                        <input type="text" class="form-control col-sm-6" id="input_lock_password_1" />
+                        <input type="text" class="form-control col-sm-6" id="input_lock_password_2" />
+                    </div>
+                </div>
+
+                <hr>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button id="doorApply" type="button" class="btn btn-primary">应用</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+<!--<div class="jumbotron text-center" style="margin-bottom:0">-->
+    <!--<p>底部内容</p>-->
+<!--</div>-->
+
+</html>

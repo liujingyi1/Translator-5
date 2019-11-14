@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Settings</title>
+    <link rel="icon" href="images/favicon.png">
+
+    <!-- Bootstrap -->
+    <!--<link href="css/bootstrap-magic.css" rel="stylesheet">-->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
+
+    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+    <script src="jquery/jquery.min.js"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</head>
+
+
+<body>
+<div class="jumbotron text-center" style="margin-bottom:0">
+    <p>设置界面</p>
+</div>
+</br>
+
+<div class="container">
+    <div class="row clearfix">
+        <div class="col-sm-3">
+            <ul id="myTabs" class="nav nav-pills nav-stacked" role="tablist">
+                <li role="presentation"><a href="#home" aria-controls="home" aria-expanded="true" role="tab" data-toggle="tab">首页</a></li>
+                <li role="presentation"><a href="#net" aria-controls="net" aria-expanded="true" role="tab" data-toggle="tab">网络设置</a></li>
+                <li role="presentation"><a href="#device" aria-controls="device" aria-expanded="true" role="tab" data-toggle="tab">设备设置</a></li>
+                <li role="presentation"><a href="#doorAccess" aria-controls="doorAccess" aria-expanded="true" role="tab" data-toggle="tab">门禁设置</a></li>
+                <li role="presentation"><a href="#sip" aria-controls="sip" aria-expanded="true" role="tab" data-toggle="tab">sip设置</a></li>
+                <li role="presentation"><a href="#phone" aria-controls="phone" aria-expanded="true" role="tab" data-toggle="tab">电话转呼</a></li>
+                <li role="presentation"><a href="#advanced" aria-controls="advanced" aria-expanded="true" role="tab" data-toggle="tab">高级设置</a></li>
+                <li role="presentation"><a href="#cloud" aria-controls="cloud" aria-expanded="true" role="tab" data-toggle="tab">微云门禁</a></li>
+                <li role="presentation"><a href="#tslAccess" aria-controls="tslAccess" aria-expanded="true" role="tab" data-toggle="tab">特斯联门禁</a></li>
+                <li role="presentation"><a href="#sysinfo" aria-controls="sysinfo" aria-expanded="true" role="tab" data-toggle="tab">系统信息</a></li>
+                <li role="presentation"><a href="#logout" aria-controls="logout" aria-expanded="true" role="tab" data-toggle="tab">用户退出</a></li>
+            </ul>
+            <hr class="hidden-sm hidden-md hidden-lg">
+        </div>
+        <div class="col-sm-9">
+
+            <div class="main-content">
+                <div class="page-content">
+                    <div id="page-content-area" class="page-content-area" data-ajax-content="true">
+
+                        <!-- Tab panes -->
+                        <div id="myTabContent" class="tab-content">
+                            <div id="home" role="tabpanel" class="tab-pane fade in active" ><script> $("#home").load("home.html");</script></div>
+                            <div id="net" role="tabpanel" class="tab-pane fade" ><script> $("#net").load("net.html");</script></div>
+                            <div id="device" role="tabpanel" class="tab-pane fade" ><script> $("#device").load("device.html");</script></div>
+                            <div id="doorAccess" role="tabpanel" class="tab-pane fade" ><script> $("#doorAccess").load("doorAccess.html");</script></div>
+                            <div id="sip" role="tabpanel" class="tab-pane fade" ><script> $("#sip").load("sip.html");</script></div>
+                            <div id="phone" role="tabpanel" class="tab-pane fade" ><script> $("#phone").load("phone.html");</script></div>
+                            <div id="advanced" role="tabpanel" class="tab-pane fade" ><script> $("#advanced").load("advanced.html");</script></div>
+                            <div id="cloud" role="tabpanel" class="tab-pane fade" ><script> $("#cloud").load("cloud.html");</script></div>
+                            <div id="tslAccess" role="tabpanel" class="tab-pane fade" ><script> $("#tslAccess").load("tslAccess.html");</script></div>
+                            <div id="sysinfo" role="tabpanel" class="tab-pane fade" ><script> $("#sysinfo").load("sysinfo.html");</script></div>
+                            <div id="logout" role="tabpanel" class="tab-pane fade" ><script> $("#logout").load("logout.html");</script></div>
+                        </div>
+
+                        <!--<div class="embed-responsive embed-responsive-16by9">-->
+                            <!--<iframe id="content-frame" class="embed-responsive-item" name="content-frame"></iframe>-->
+                        <!--</div>-->
+
+                    </div><!-- /.page-content-area -->
+                </div><!-- /.page-content -->
+            </div><!-- /.main-content -->
+        </div>
+    </div>
+
+</div>
+<!--<div class="jumbotron text-center" style="margin-bottom:0">-->
+    <!--<p>底部内容</p>-->
+<!--</div>-->
+</body>
+</html>

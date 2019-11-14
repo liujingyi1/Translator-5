@@ -1,0 +1,3 @@
+/build
+/src/main/jniLibs/armeabi-v7a/libyuv_util.so
+/src/main/jniLibs/x86/libyuv_util.so
